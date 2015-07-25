@@ -3,6 +3,8 @@ package com.example.testapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -35,5 +37,11 @@ public class DisplayMessageActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu){
+		MenuInflater menuInflater = getMenuInflater();
+		menuInflater.inflate(R.menu.main_activity_actions, menu);
+		return super.onCreateOptionsMenu(menu);
 	}
 }
