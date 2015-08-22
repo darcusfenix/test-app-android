@@ -85,11 +85,5 @@ public final class R {
         /**  ActionBar styles 
          */
         public static final int MyActionBar=0x7f070003;
-        /**  ActionBar tabs text styles 
-         */
-        public static final int MyActionBarTabText=0x7f070005;
-        /**  ActionBar title text 
-         */
-        public static final int MyActionBarTitleText=0x7f070004;
     }
 }
